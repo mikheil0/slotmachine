@@ -2,6 +2,8 @@
 
 namespace App\Resourses;
 
+use App\Resourses\Interfaces\IPayline;
+
 /**
  * Board class compares boardline with a paylines and returns winning matches
  *
@@ -41,7 +43,7 @@ class Board {
     }
    
 
-    public function setPayline(PayLine $payline): void {
+    public function setPayline(IPayline $payline): void {
         $combination = $payline->getCombination();
         
         $matches = $this->checkWinningMatches($combination);

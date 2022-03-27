@@ -7,9 +7,10 @@ namespace App\Resourses;
  *
  * @author mikheil0
  */
+use App\Resourses\Interfaces\IPayline;
 
 
-class PayLine {
+class SlotPayLine implements IPayline {
     
     private array $payline = [];
 

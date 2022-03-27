@@ -11,7 +11,7 @@ namespace App;
 use App\Resourses\Interfaces\IGame;
 
 use App\Resourses\Board;
-use App\Resourses\PayLine;
+use App\Resourses\SlotPayLine;
 use App\Resourses\Payout;
 
 
@@ -51,11 +51,11 @@ class SlotGame implements IGame {
             /*
             $this->board = new Board(['J', 'J', 'J', 'Q', 'K', 'cat', 'J', 'Q', 'monkey', 'bird', 'bird', 'bird', 'J', 'Q', 'A']);
 
-            $this->board->setPayline(new PayLine([0, 3, 6, 9, 12]));
-            $this->board->setPayline(new PayLine([1, 4, 7, 10, 13]));
-            $this->board->setPayline(new PayLine([2, 5, 8, 11, 14]));
-            $this->board->setPayline(new PayLine([0, 4, 8, 10, 12]));
-            $this->board->setPayline(new PayLine([2, 4, 6, 10, 14]));
+            $this->board->setPayline(new SlotPayLine([0, 3, 6, 9, 12]));
+            $this->board->setPayline(new SlotPayLine([1, 4, 7, 10, 13]));
+            $this->board->setPayline(new SlotPayLine([2, 5, 8, 11, 14]));
+            $this->board->setPayline(new SlotPayLine([0, 4, 8, 10, 12]));
+            $this->board->setPayline(new SlotPayLine([2, 4, 6, 10, 14]));
              * 
              */
             
@@ -63,11 +63,11 @@ class SlotGame implements IGame {
             //using random values
             $this->board = new Board();
 
-            $this->board->setPayline(new PayLine());
-            $this->board->setPayline(new PayLine());
-            $this->board->setPayline(new PayLine());
-            $this->board->setPayline(new PayLine());
-            $this->board->setPayline(new PayLine());
+            $this->board->setPayline(new SlotPayLine());
+            $this->board->setPayline(new SlotPayLine());
+            $this->board->setPayline(new SlotPayLine());
+            $this->board->setPayline(new SlotPayLine());
+            $this->board->setPayline(new SlotPayLine());
             
             
             $playResults = $this->board->getWinnings();

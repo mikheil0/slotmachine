@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use App\SlotGame;
 
-const NOBIDTEXT = 'Please set a bid';
+const NOBETTEXT = 'Please set a bet';
 
 
 class slotmachineCommand extends Command {
@@ -21,7 +21,7 @@ class slotmachineCommand extends Command {
             
             $this->info(json_encode($result, JSON_PRETTY_PRINT));
         } else {
-            $this->info(json_encode(NOBIDTEXT, JSON_PRETTY_PRINT));
+            $this->info(json_encode(NOBETTEXT, JSON_PRETTY_PRINT));
         }
         
     }

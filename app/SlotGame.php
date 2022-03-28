@@ -85,7 +85,7 @@ class SlotGame implements IGame {
     }
     
     
-    private function countPayout($winnings){
+    private function countPayout(array $winnings){
         $this->payout = new Payout();
         
         $this->payout->setBet($this->bet);
